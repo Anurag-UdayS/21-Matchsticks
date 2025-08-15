@@ -1164,7 +1164,7 @@ void REFUSE(void) {
 
 	for (unsigned short n = 10000; n--;) {
 		printf(no_max);
-		sleepms(250);
+		sleepms(25);
 	};
 	puts("");
 
@@ -1191,7 +1191,7 @@ void NORMIE(void) {
 	loading(1, "You, you are a ", normax, true);
 	for (unsigned short n = 10000; n--;) {
 		printf(normax);
-		sleepms(250);
+		sleepms(25);
 	};
 	puts("");
 
