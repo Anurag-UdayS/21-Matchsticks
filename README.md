@@ -37,8 +37,8 @@ the game, I would love your suggestions!
 		https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US
 2. Download the Game.
 3. Double-click the game. Blue "Windows Defender" window opens.
-4. Click ["More info"](./assets/windows/warn1.jpeg)
-5. Click ["Run Anyway"](./assets/windows/warn2.jpeg)
+4. Click "More info" ![More info](./assets/windows/warn1.jpeg)
+5. Click "Run Anyway" ![Run Anyway](./assets/windows/warn2.jpeg)
 6. See if Windows Terminal opens.
 7. Enjoy!
 
