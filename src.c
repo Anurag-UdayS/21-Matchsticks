@@ -205,17 +205,9 @@ Stress Test Checklist:
 #ifdef _WIN32
 	#include <windows.h> // Sleep
 	#define sleep(x) Sleep(x*1000)
-	#define sleepms(x) Sleep(x)
 	#define itoa(x) itoa_(x) // Apparently x86_64-w64-migw32-gcc's stdlib CONTAINS itoa...
 #else
-	#include <unistd.h> // sleep, sleepms
-	#define sleepms(x) usleep(x)
-#endif
-
-#ifdef DEBUG
-unsigned sleep(unsigned) {return 0;}
-#undef sleepms
-#define sleepms(x) sleep(x)
+	#include <unistd.h> // sleep
 #endif
 
 // ------------------------------------------------------------------------------------ //
@@ -1164,7 +1156,6 @@ void REFUSE(void) {
 
 	for (unsigned short n = 10000; n--;) {
 		printf(no_max);
-		sleepms(25);
 	};
 	puts("");
 
@@ -1191,7 +1182,6 @@ void NORMIE(void) {
 	loading(1, "You, you are a ", normax, true);
 	for (unsigned short n = 10000; n--;) {
 		printf(normax);
-		sleepms(25);
 	};
 	puts("");
 
