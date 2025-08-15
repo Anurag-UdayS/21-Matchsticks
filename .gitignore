@@ -1,0 +1,7 @@
+# Ignore release files
+*.bin
+*.exe
+*.log
+
+# Ignore test
+tests/
