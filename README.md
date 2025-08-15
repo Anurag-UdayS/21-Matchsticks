@@ -58,7 +58,7 @@ the game, I would love your suggestions!
 ### Build from source
 ```bash
 curl https://raw.githubusercontent.com/Anurag-UdayS/21-Matchsticks/refs/heads/main/src.c -o "game.c"
-gcc -lm -fsanitize=address -Wall -Wno-char-subscripts -o game.bin
+gcc -lm -fsanitize=address -Wall -Wno-char-subscripts -o game.bin game.c
 sudo chmod +x game.bin
-exec game.bin
+exec ./game.bin
 ```
